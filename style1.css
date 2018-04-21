@@ -1,0 +1,243 @@
+*
+{
+	margin: 0px;
+	 padding: 0px;
+}
+body
+{
+	background: url(background.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+.header
+{
+	width: 100%;
+	height: 80px;
+	background: #333;
+	box-shadow: 0px 2px 4px gray;
+}
+/*adding the navigation bar in the header*/
+.navbar
+{
+	width: 1100px;
+	height: 80px;
+	float: right;
+}
+.navbar li 
+{
+	width: 177px;
+	list-style: none;
+	float: left;
+	border-right: 1px solid gray;
+	border-left: 1px solid gray;
+}
+li a
+{
+	display: block;
+	color: white;
+	line-height: 80px;
+	text-align: center;
+	font-family: cursive;
+	font-size: 20px;
+	text-decoration: none;
+}
+li a:hover,
+li a:focus
+{
+	background: skyblue;
+	color: #333;
+}
+/*editing the logo of the header section*/
+.logo
+{
+	width: 200px;
+	height: 80px;
+	float: left;
+	padding-left: 40px;
+	}
+	/*adding flex*/
+.flex-container {
+  display: flex;
+  flex-direction: row;
+}
+.pic
+{
+	margin:	100px 30px;
+	
+	
+}
+.pic img
+{
+	border-radius: 50%;
+}
+.info
+{
+ 	
+	
+	margin: 100px 80px;
+	font-size: 28px;
+	
+	border-radius: 15px;
+	padding: 15px;
+}
+p {
+
+    color: white;
+    text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
+}
+/*For making the page responsive we use the following style where the max width is 1340px*/
+@media screen and (max-width: 1340px){
+.navbar
+{
+	width: 900px;
+}
+.navbar li 
+{
+	width: 140px;
+}
+.logo img
+{
+	width: 150px;
+	height: 80px;
+}
+.flex-container {
+  display: flex;
+  flex-direction: row;
+}
+.pic
+{
+	margin:	80px 50px;
+	width: 200px;
+	height: 100px;
+	
+}
+.pic img
+{
+	border-radius: 50%;
+}
+.info
+{
+ 	
+	margin: 50px 200px;
+	font-size: 28px;
+	
+	border-radius: 15px;
+	padding: 15px;
+}
+/*For making the page responsive we use the following style where the max width is 1155px*/
+@media screen and (max-width: 1155px){
+.header
+{
+	width: 100%;
+	height: 60px;
+	position: relative;
+	top: 80px;
+}
+.navbar
+{
+	width: 100%;
+	height: 60px;
+	float: right;
+
+}
+.navbar li 
+{
+	width: 14%;
+}
+li a
+{
+	line-height: 60px;
+	font-size: 16px;
+}
+.logo
+{
+	width: 200px;
+	height: 80px;
+	float: left;
+	padding-left: 40px;
+	position: absolute;
+	top: -80px;
+}
+.pic
+{
+	width: 200px;
+	height: 100px;
+	margin: 120px 20px 0px 170px;  
+}
+.flex-container {
+  display: flex;
+  flex-direction: row;
+}
+.pic
+{
+	margin:	150px 50px;
+	width: 150px;
+	height: 80px;
+	
+}
+.pic img
+{
+	border-radius: 50%;
+}
+.info
+{
+ 	
+	margin: 120px 200px;
+	font-size: 28px;
+	
+	border-radius: 15px;
+	padding: 15px;
+}
+/*For making the page responsive we use the following style where the max width is 550px*/
+@media screen and (max-width: 550px){
+.header
+{
+	width: 100%;
+	height: 60px;
+}
+.navbar
+{
+	width: 100%;
+	height: 60px;
+	float: none;
+
+}
+.navbar li 
+{
+	width: 100%;
+	list-style: none;
+	float: none;
+	border-bottom: 1px solid skyblue;
+}
+li a
+{
+	display: block;
+	color: white;
+	line-height: 60px;
+	font-size: 16px;
+	background: #333;
+}
+.flex-container {
+  display: flex;
+  flex-direction: column;
+}
+.pic
+{
+	margin: 420px 50px 20px 50px;
+	width: 150px;
+	height: 80px;
+	
+}
+.pic img
+{
+	border-radius: 50%;
+}
+.info
+{
+ 	
+	margin: 200px 20px;
+	font-size: 28px;
+	
+	border-radius: 15px;
+	padding: 15px;
+}

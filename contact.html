@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>I am Anubhav Shrestha</title>
+	<link rel="stylesheet" type="text/css" href="style4.css">
+	<meta name="viewport" content="width=device-width intial-scale=1">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+	<!-- creating navigation bar -->
+	<div class="header">
+		<div class="logo">
+			<img src="logo.png">
+		</div>
+		<ul class="navbar" id="mySidenav">
+			<!-- adding different navigators in the navigation bar -->
+			<li><a href="home.html">Home</a></li>
+			<li><a href="about.html">About</a></li>
+			<li><a href="cv.html">CV</a></li>
+			<li><a href="social.html">Social</a></li>
+			<li><a href="modelsgp.html">Modelsgp</a></li>
+			<li><a href="contact.html">Contact</a></li>
+			
+		</ul>
+	</div>
+	<!-- adding a form in the web page -->
+	<div class="form">
+		<form>
+			First name:<br>
+			<input type="text" name="firstname" class="line"><br>
+			Last name:<br>
+			<input type="text" name="lastname"	class="line"><br>
+			Email:<br>
+			<input type="text" name="email" class="line"><br>
+			
+		</form>
+<br>
+<!-- adding a textbox -->
+<textarea rows="4" cols="50" name="comment" form="usrform">
+Comment here...</textarea>
+<form>
+	<input type="button" value="Submit">
+			<input type="reset">
+		</form>
+	</div>
+	<!-- adding information -->
+	<div class="name">
+			<h1>Anubhav Shrestha</h1>
+			134 Maharajgunj,Kathmandu<br>
+			Tel: 01-4720692<br>
+			Mobile:+977-9843931474<br>
+			Email: sthanubhav@gmail.com<br>
+		</div>
+		<!-- adding google map api in the web page -->
+		<div id="map">
+			<script type="text/javascript">
+				function initMap() {
+					var location = {lat: 27.717245, lng: 85.323960};
+					var map = new google.maps.Map(document.getElementById("map"), {
+						zoom: 4,
+						center: location
+					});
+					var marker = new google.maps.Marker({
+						position: location, 
+						map: map
+					});
+				}
+				
+			</script>
+			<!-- this helps to show the map in the web page as we insert a key form google map api -->
+			<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC2K62QUJyWmFf9TTju3KXBz-XuhZVeGQc
+&callback=initMap"
+  type="text/javascript"></script>
+		</div>
+<div class="footer">
+	<!-- adding a copy rignt symbol -->
+	<div class="copy">
+		&#169; | Anubhav Shrestha
+	</div>
+	<!-- adding social icons -->
+	<div class="icons">
+		<a href="https://www.facebook.com/anubhav.shrestha2" class="fa fa-facebook"></a>
+		<a href="https://twitter.com/sthanubhav" class="fa fa-twitter"></a>
+		<a href="https://plus.google.com/u/0/117587499900468238411" class="fa fa-google"></a>
+	</div>
+</div>

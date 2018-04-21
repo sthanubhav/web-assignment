@@ -1,0 +1,203 @@
+
+
+*
+{
+	margin: 0px;
+	 padding: 0px;
+}
+body
+{
+	background: url(background.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+.header
+{
+	width: 100%;
+	height: 80px;
+	background: #333;
+	box-shadow: 0px 2px 4px gray;
+}
+/*Adding the navidation bar*/
+.navbar
+{
+	width: 1100px;
+	height: 80px;
+	float: right;
+}
+.navbar li 
+{
+	width: 177px;
+	list-style: none;
+	float: left;
+	border-right: 1px solid gray;
+	border-left: 1px solid gray;
+}
+li a
+{
+	display: block;
+	color: white;
+	line-height: 80px;
+	text-align: center;
+	font-family: cursive;
+	font-size: 20px;
+	text-decoration: none;
+}
+li a:hover,
+li a:focus
+{
+	background: skyblue;
+	color: #333;
+}
+/*adding and editing the logo in the header section*/
+.logo
+{
+	width: 200px;
+	height: 80px;
+	float: left;
+	padding-left: 40px;
+}
+/*adding and edditing the social icons*/
+.media
+{
+	text-align: center;
+	margin-top: 50px;
+	color: white; 
+}
+.media h1
+{
+	 color: white;
+    text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
+	font-size: 48px;
+	margin-bottom: 80px;
+}
+.fa {
+  padding: 20px;
+  font-size: 100px;
+  width: 100px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 40px;
+  border-radius: 50%;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
+
+.fa-google {
+  background: #dd4b39;
+  color: white;
+}
+
+.fa-skype {
+  background: #00aff0;
+  color: white;
+  margin-top: 50px;
+}
+/*For making the page responsive we use the following style where the max width is 1340px*/
+@media screen and (max-width: 1340px){
+.navbar
+{
+	width: 900px;
+}
+.navbar li 
+{
+	width: 140px;
+}
+.logo img
+{
+	width: 150px;
+	height: 80px;
+}
+/*For making the page responsive we use the following style where the max width is 1155px*/
+@media screen and (max-width: 1155px){
+.header
+{
+	width: 100%;
+	height: 60px;
+	position: relative;
+	top: 80px;
+}
+.navbar
+{
+	width: 100%;
+	height: 60px;
+	float: right;
+
+}
+.navbar li 
+{
+	width: 14%;
+}
+li a
+{
+	line-height: 60px;
+	font-size: 16px;
+}
+.logo
+{
+	width: 200px;
+	height: 80px;
+	float: left;
+	padding-left: 40px;
+	position: absolute;
+	top: -80px;
+}
+.media
+{
+	text-align: center;
+	margin-top: 100px;
+	color: white; 
+}
+/*For making the page responsive we use the following style where the max width is 550px*/
+@media screen and (max-width: 550px){
+.header
+{
+	width: 100%;
+	height: 60px;
+}
+.navbar
+{
+	width: 100%;
+	height: 60px;
+	float: none;
+
+}
+.navbar li 
+{
+	width: 100%;
+	list-style: none;
+	float: none;
+	border-bottom: 1px solid skyblue;
+}
+li a
+{
+	display: block;
+	color: white;
+	line-height: 60px;
+	font-size: 16px;
+	background: #333;
+}
+.media
+{
+	text-align: center;
+	margin-top: 400px;
+	color: white; 
+}
+.fa-skype
+{
+	background: #00aff0;
+  color: white;
+ margin-top: 0px;
+}
